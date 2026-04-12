@@ -1,7 +1,29 @@
 # maven-java-question-1
+APP.java
+*******************
+package com.example;
+public class App {
+ public int add(int a, int b) {
+ return a + b;
+ }
+}
+**************
+Junit test
+*************
+package com.example;
+import org.junit.Test;
+import static org.junit.Assert.*;
+public class AppTest {
+ @Test
+ public void testAdd() {
+ App app = new App();
+ assertEquals(5, app.add(2, 3));
+ }
+}
+****************
 
-comment in simple/>
-mvn clean test
+
+comment in simple/>  mvn clean test
 
 git init
 git add .
